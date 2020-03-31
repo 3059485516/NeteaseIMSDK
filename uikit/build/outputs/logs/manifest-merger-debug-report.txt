@@ -337,7 +337,7 @@ receiver#com.netease.nim.avchatkit.receiver.IncomingCallReceiver
 ADDED from D:\androidstudio\project\NeteaseIMSDK\uikit\AndroidManifest.xml:189:9-193:20
 	android:name
 		ADDED from D:\androidstudio\project\NeteaseIMSDK\uikit\AndroidManifest.xml:189:19-89
-intent-filter#action:name:android.intent.action.PHONE_STATE
+intent-filter#android.intent.action.PHONE_STATE
 ADDED from D:\androidstudio\project\NeteaseIMSDK\uikit\AndroidManifest.xml:190:13-192:29
 action#android.intent.action.PHONE_STATE
 ADDED from D:\androidstudio\project\NeteaseIMSDK\uikit\AndroidManifest.xml:191:17-76

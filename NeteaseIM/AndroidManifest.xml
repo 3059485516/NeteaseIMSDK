@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.netease.nim.yl">
 
     <!--网络相关-->
@@ -44,6 +45,24 @@
     <!--配置一个程序用于调试-->
     <uses-permission android:name="android.permission.SET_DEBUG_APP" />
 
+    <permission
+        android:name="com.yl.lovestudy.permission.RECEIVE_MSG"
+        android:protectionLevel="signature" />
+    <!-- 接受SDK消息广播权限， 第三方APP接入时，请将com.netease.nim.demo替换为自己的包名 -->
+    <uses-permission android:name="com.yl.lovestudy.permission.RECEIVE_MSG" />
+    <!-- 小米推送 -->
+    <permission
+        android:name="com.yl.lovestudy.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.yl.lovestudy.permission.MIPUSH_RECEIVE" />
+
+    <uses-sdk tools:overrideLibrary="com.huawei.android.hms.base,com.huawei.android.hms.push" />
+
+    <permission
+        android:name="android.permission.INTERACT_ACROSS_USERS_FULL"
+        android:protectionLevel="signature" />
+
     <!--声明程序使用camera和自动对焦功能-->
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -53,9 +72,14 @@
         android:glEsVersion="0x00020000"
         android:required="true" />
 
-    <application>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
 
-        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+    <application>
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
 
         <!--高德地图-->
         <meta-data
