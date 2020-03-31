@@ -39,5 +39,6 @@ dependencies {
     annotationProcessor "com.github.bumptech.glide:compiler:4.6.1"
     implementation 'me.everything:overscroll-decor-android:1.0.4'
     implementation "me.leolin:ShortcutBadger:1.1.19@aar"
+    api 'com.alibaba:fastjson:1.2.44'
 }
 
