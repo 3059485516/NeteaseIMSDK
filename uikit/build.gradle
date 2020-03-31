@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 45
+        versionName "4.7.0"
+        renderscriptSupportModeEnabled true
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res', 'res-ptr2', 'res-chatroom', 'res-avchatkit']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: '*.jar')
+    implementation project(path: ':faceunity')
+    api "com.android.support:support-v4:28.0.0"
+    api "com.android.support:design:28.0.0"
+    api "com.android.support.constraint:constraint-layout:1.1.3"
+    api "com.github.bumptech.glide:glide:4.6.1"
+    api "jp.wasabeef:glide-transformations:3.0.1"
+    annotationProcessor "com.github.bumptech.glide:compiler:4.6.1"
+    implementation 'me.everything:overscroll-decor-android:1.0.4'
+    implementation "me.leolin:ShortcutBadger:1.1.19@aar"
+}
+

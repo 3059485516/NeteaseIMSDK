@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="action_bar_tittle_color_555555">#555555</color>
+    <color name="grey_white_has_alpha">#66FAFAFA</color>
+    <color name="color_network_bar_bg_ee4b62">#ee4b62</color>
+    <color name="color_grey_888888">#888888</color>
+    <color name="color_grey_666666">#666666</color>
+    <color name="color_white_66ffffff">#66ffffff</color>
+    <color name="color_yellow_fcf3cd">#fcf3cd</color>
+    <color name="color_blue_3a9efb">#3a9efb</color>
+
+    <color name="g_child_page_bg_color">#FFFFFF</color>
+    <!-- session -->
+    <color name="help_color">#ff999999</color>
+
+    <color name="color_red_f04c62">#f04c62</color>
+
+    <color name="colorPrimary">@color/theme_color</color>
+    <color name="colorPrimaryDark">@color/theme_color</color>
+    <color name="colorAccent">@color/theme_color</color>
+
+    <color name="color_black_cc000000">#cc000000</color>
+
+    <color name="color_blue_238efa">#238efa</color>
+
+    <color name="color_c9c9c9">#C9C9C9</color>
+    <color name="color_238fea">#238EFA</color>
+    <color name="color_999">#999</color>
+
+    <color name="color_f2f7fc">#F2F7FC</color>
+    <color name="color_c2364b">#C2364B</color>
+    <color name="color_f5455e">#F5455E</color>
+    <color name="color_grey_d0d0d0">#d0d0d0</color>
+    <color name="video_call_peer_close_cameral_text_shadow">#484848</color>
+    <color name="video_call_peer_close_cameral_text_color">#f1f1f1</color>
+    <color name="t_av_chat_setting_bar">#3C4149</color>
+    <color name="color_gray_alpha40">#66000000</color>
+    <color name="color_green_C2FF9A">#C2FF9A</color>
+    <color name="color_yellow_FAEC55">#faec55</color>
+    <color name="color_black_bf000000">#BF000000</color>
+    <color name="list_divider">#534f4d</color>
+    <color name="list_select">#238efa</color>
+    <color name="color_blue_74b9ff">#74b9ff</color>
+    <color name="color_gray_dfe2e6">#dfe2e6</color>
+
+    <color name="color_red_ff4055">#ff4055</color>
+    <color name="color_white_b3ffffff">#b3ffffff</color>
+    <color name="color_white_00ffffff">#00ffffff</color>
+    <color name="color_grey_545454">#545454</color>
+    <color name="color_black_999999">#999999</color>
+
+</resources>

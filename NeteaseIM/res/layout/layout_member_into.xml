@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_member_into"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dp"
+    android:background="@drawable/gift_background"
+    android:gravity="center_vertical"
+    android:paddingRight="10dp"
+    android:visibility="gone"
+    tools:showIn="@layout/live_player_activity">
+
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/iv_into_member_head"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/tv_into_member_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        tools:text="杨世豪进入房间" />
+</LinearLayout>

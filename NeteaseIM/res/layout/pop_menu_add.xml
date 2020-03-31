@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nim_popup_menu_bg"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <TextView
+        android:id="@+id/menu_1"
+        style="@style/PopItem"
+        android:layout_marginTop="0dp"
+        android:text="添加好友" />
+
+    <TextView
+        android:id="@+id/menu_2"
+        style="@style/PopItem"
+        android:text="创建讨论组" />
+
+
+    <TextView
+        android:id="@+id/menu_3"
+        style="@style/PopItem"
+        android:text="创建班级群"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/menu_4"
+        style="@style/PopItem"
+        android:layout_marginTop="0dp"
+        android:text="搜索班级群"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/menu_5"
+        style="@style/PopItem"
+        android:text="设置"
+        android:visibility="gone" />
+
+</LinearLayout>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="BaseQuickAdapter_viewholder_support" type="id"/>
+    <item name="BaseQuickAdapter_swiping_support" type="id"/>
+    <item name="BaseQuickAdapter_dragging_support" type="id"/>
+
+    <item name="tv_title" type="id"/>
+    <item name="tv_right" type="id"/>
+    <item name="iv_back" type="id"/>
+</resources>

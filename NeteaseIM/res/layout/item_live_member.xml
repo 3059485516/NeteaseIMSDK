@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.netease.nim.uikit.common.ui.imageview.HeadImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_head"
+    android:layout_width="37dp"
+    android:layout_height="37dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginTop="4dp" />

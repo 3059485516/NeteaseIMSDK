@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/control_btn_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/banned_btn"
+            style="@style/LiveControlStyle"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/banned_icon_selector" />
+
+        <TextView
+            android:id="@+id/input_btn"
+            style="@style/LiveControlStyle"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/input_icon_selector"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/gift_btn"
+            style="@style/LiveControlStyle"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gift_icon_selector" />
+
+        <TextView
+            android:id="@+id/interaction_btn"
+            style="@style/LiveControlStyle"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_interaction_normal"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/control_btn_mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/control_btn_bottom"
+        android:layout_alignLeft="@id/control_btn_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/hd_btn"
+            style="@style/LiveControlStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_mode_normal"
+            android:gravity="center"
+            android:text="高清"
+            android:textColor="@color/color_black_333333" />
+
+        <ImageButton
+            android:id="@+id/switch_btn"
+            style="@style/LiveControlStyle"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/interaction_btn"
+            android:background="@drawable/switch_camera_selector" />
+
+        <ImageButton
+            android:id="@+id/beauty_btn"
+            style="@style/LiveControlStyle"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/switch_btn"
+            android:background="@drawable/ic_beauty_open_selector" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/control_extend_btn"
+        style="@style/LiveControlStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/control_extend_top_selector" />
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_member_info"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/shape_white"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_member_info_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@mipmap/icon_close" />
+
+    <com.netease.nim.uikit.common.ui.imageview.HeadImageView
+        android:id="@+id/iv_member_info_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        tools:src="@drawable/head_icon_1" />
+
+    <TextView
+        android:id="@+id/tv_member_info_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_member_info_head"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="8dp"
+        tools:text="楊世豪" />
+
+    <TextView
+        android:id="@+id/tv_member_info_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_member_info_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        tools:text="137111111111" />
+
+
+    <Button
+        android:id="@+id/btn_anchor_link_video"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_member_info_name"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/nim_blue_btn"
+        android:text="@string/video_link"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_anchor_link_audio"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_member_info_name"
+        android:layout_toRightOf="@+id/btn_anchor_link_video"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/nim_blue_btn"
+        android:text="@string/audio_link"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/btn_banned_members"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_member_info_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/nim_blue_btn"
+        android:text="禁言"
+        android:textColor="@color/white"
+        android:textSize="10sp" />
+
+</RelativeLayout>

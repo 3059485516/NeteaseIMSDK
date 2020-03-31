@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/nim_popup_menu_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_target_all"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center_horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全体" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_target_teacher"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="2dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingRight="2dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="老师" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_target_parents"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="家长" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
