@@ -24,7 +24,6 @@ import com.netease.nim.yl.event.DemoOnlineStateContentProvider;
 import com.netease.nim.yl.mixpush.DemoMixPushMessageHandler;
 import com.netease.nim.yl.mixpush.DemoPushContentProvider;
 import com.netease.nim.yl.rts.RTSHelper;
-import com.netease.nim.yl.session.NimDemoLocationProvider;
 import com.netease.nim.yl.session.SessionHelper;
 import com.netease.nimlib.sdk.NIMClient;
 import com.netease.nimlib.sdk.auth.LoginInfo;
@@ -73,7 +72,7 @@ public class NeteaseApp {
         // 初始化
         NimUIKit.init(context, buildUIKitOptions(context));
         // 设置地理位置提供者。如果需要发送地理位置消息，该参数必须提供。如果不需要，可以忽略。
-        NimUIKit.setLocationProvider(new NimDemoLocationProvider());
+        //NimUIKit.setLocationProvider(new NimDemoLocationProvider());
         // IM 会话窗口的定制初始化。
         SessionHelper.init();
         // 聊天室聊天窗口的定制初始化。

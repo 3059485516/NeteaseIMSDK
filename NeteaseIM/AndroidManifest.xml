@@ -245,20 +245,6 @@
             android:configChanges="keyboardHidden"
             android:theme="@style/AppTheme.NoActionBar" />
 
-        <!--map-->
-        <activity
-            android:name=".location.activity.LocationAmapActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:label="@string/location_map"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".location.activity.NavigationAmapActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:label="@string/location_navigate"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
 
         <!--消息历史搜索-->
         <activity
@@ -335,8 +321,6 @@
         <!--云信进程间通信service-->
         <service android:name="com.netease.nimlib.service.ResponseService" />
 
-        <!--高德地图-->
-        <service android:name="com.amap.api.location.APSService" />
 
         <!--—————————————————————————————————————————————————————————————————————————————————————-->
 
