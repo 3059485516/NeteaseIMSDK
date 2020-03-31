@@ -30,7 +30,6 @@ import com.netease.nimlib.sdk.auth.LoginInfo;
 import com.netease.nimlib.sdk.mixpush.NIMPushClient;
 import com.netease.nimlib.sdk.uinfo.model.UserInfo;
 import com.netease.nimlib.sdk.util.NIMUtil;
-import com.tencent.smtt.sdk.QbSdk;
 
 
 public class NeteaseApp {
@@ -41,7 +40,6 @@ public class NeteaseApp {
      * @param optionCls
      */
     public static void neteaseIMInit(Context context,String baseUrl, Class backCls,Class optionCls) {
-        QbSdk.initX5Environment(context,  null);
         StorageUtil.init(context, null);
         ScreenUtil.init(context);
         NetIMCache.setContext(context);

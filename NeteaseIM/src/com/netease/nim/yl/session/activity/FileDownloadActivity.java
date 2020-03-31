@@ -27,8 +27,6 @@ import com.netease.nimlib.sdk.msg.MsgServiceObserve;
 import com.netease.nimlib.sdk.msg.attachment.FileAttachment;
 import com.netease.nimlib.sdk.msg.constant.AttachStatusEnum;
 import com.netease.nimlib.sdk.msg.model.IMMessage;
-import com.tencent.smtt.sdk.TbsReaderView;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -47,7 +45,6 @@ public class FileDownloadActivity extends UI implements View.OnClickListener {
     private ImageView ivShare;
 
     private IMMessage message;
-    private TbsReaderView readerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,9 +61,6 @@ public class FileDownloadActivity extends UI implements View.OnClickListener {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (readerView != null) {
-            readerView.onStop();
-        }
         registerObservers(false);
     }
 
@@ -188,7 +182,7 @@ public class FileDownloadActivity extends UI implements View.OnClickListener {
             return;
         }
         if (path.endsWith(extension)) {
-            doOpen(path, extension);
+
         } else {
             File file = new File(getApplication().getExternalCacheDir(), "nim/file");
             if (!file.exists()) {
@@ -203,7 +197,6 @@ public class FileDownloadActivity extends UI implements View.OnClickListener {
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
-                            doOpen(renameTo, extension);
                         }
                     });
                 }
@@ -248,22 +241,6 @@ public class FileDownloadActivity extends UI implements View.OnClickListener {
     }
 
 
-    private void doOpen(String path, String type) {
-        ivShare.setVisibility(View.VISIBLE);
-        readerView = new TbsReaderView(this, new TbsReaderView.ReaderCallback() {
-            @Override
-            public void onCallBackAction(Integer integer, Object o, Object o1) {
-            }
-        });
-        frameLayout.addView(readerView);
-        Bundle bundle = new Bundle();
-        bundle.putString("filePath", path);
-        bundle.putString("tempPath", Environment.getExternalStorageDirectory() + File.separator + "temp");
-        boolean b = readerView.preOpen(type, false);
-        if (b) {
-            readerView.openFile(bundle);
-        }
-    }
 
     private void share() {
         if (message == null) {
