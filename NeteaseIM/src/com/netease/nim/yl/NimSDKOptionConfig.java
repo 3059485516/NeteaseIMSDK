@@ -156,12 +156,12 @@ public class NimSDKOptionConfig {
         // 第三方推送配置
         MixPushConfig config = new MixPushConfig();
         // 小米推送
-        config.xmAppId = "2882303761517676107";
-        config.xmAppKey = "5611767660107";
-        config.xmCertificateName = "LOVESTUDYMI";
+        config.xmAppId = "2882303761517899898";
+        config.xmAppKey = "5771789976898";
+        config.xmCertificateName = "ZXLHM";
 
         // 华为推送
-        config.hwCertificateName = "LOVESTUDYHW";
+        config.hwCertificateName = "ZXLHHUAWEI";
 
         // 魅族推送
         config.mzAppId = "111710";

@@ -77,9 +77,7 @@
             android:name="org.apache.http.legacy"
             android:required="false" />
 
-        <meta-data
-            android:name="com.netease.nim.appKey"
-            android:value="1651e58661c3fe50e5b01abaa270a9f8" />
+
 
         <!--导航页-->
 
