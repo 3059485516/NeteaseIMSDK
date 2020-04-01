@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <color name="theme_color">#28D19D</color>
-    <color name="theme_press_color">#28D19D</color>
+    <color name="theme_color">#fff12510</color>
+    <color name="theme_press_color">#fff12510</color>
 
 
     <color name="transparent">#00000000</color>
