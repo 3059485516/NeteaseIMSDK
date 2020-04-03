@@ -15,7 +15,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bigkoo.pickerview.OptionsPickerView;
+import com.bigkoo.pickerview.view.OptionsPickerView;
 import com.netease.nim.uikit.api.NimUIKit;
 import com.netease.nim.uikit.api.model.SimpleCallback;
 import com.netease.nim.uikit.api.model.contact.ContactChangedObserver;
