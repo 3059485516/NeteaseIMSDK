@@ -6,7 +6,7 @@ android {
     useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 17
         targetSdkVersion 27
         versionCode 39
         versionName "4.7.0"
@@ -63,5 +63,5 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.github.Jay-Goo:RangeSeekBar:v1.0.7'
     implementation 'com.leon:lfilepickerlibrary:1.6.0'
-    implementation 'com.huawei.android.hms:push:2.6.0.301'
+    implementation 'com.huawei.hms:push:4.0.2.300'
 }
