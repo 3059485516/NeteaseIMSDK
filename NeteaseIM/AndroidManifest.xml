@@ -237,6 +237,12 @@
 
         <!--登录界面-->
 
+        <activity
+            android:name=".main.activity.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <!--关于-->
         <activity
             android:name=".main.activity.AboutActivity"
