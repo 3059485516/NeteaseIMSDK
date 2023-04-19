@@ -84,7 +84,7 @@ public class LoadingView extends View {
         TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.LoadingView);
         ballLeftColor = a.getColor(R.styleable.LoadingView_left_ball_color, DEFAULT_BALL_COLOR);
         ballRightColor = a.getColor(R.styleable.LoadingView_right_ball_color, DEFAULT_BALL_COLOR);
-        radius = a.getFloat(R.styleable.LoadingView_radius, DEFAULT_RADIUS);
+        radius = a.getFloat(R.styleable.LoadingView_new_radius, DEFAULT_RADIUS);
         maxTouchDistance = (float) (radius * 2.5);
         ballMoveDistance = (float) (radius * 3.5);
         animationSpeed = a.getFloat(R.styleable.LoadingView_animation_speed, DEFAULT_SPEED);
